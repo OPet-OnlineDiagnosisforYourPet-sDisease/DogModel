@@ -1,4 +1,0 @@
-Flask==2.3.2
-pandas==2.0.1
-numpy==1.23.5
-tensorflow==2.12.0
