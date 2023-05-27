@@ -54,7 +54,7 @@ def predict():
         
         return jsonify({"message": "Prediksi berhasil.", "gejala": gejala_message, "Prediction": predicted_label})
     else:
-        return jsonify({"message": "Gagal memprediksi penyakit karena gejala kurang dari 3."})
+        return jsonify({"gejala": gejala_message, "Prediction": predicted_label})
 
 
 if __name__ == '__main__':
