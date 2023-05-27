@@ -51,10 +51,10 @@ def predict():
         # Menentukan label berdasarkan nilai prediksi tertinggi
         max_index = np.argmax(prediction)
         predicted_label = labels[max_index]
+        
+        return jsonify({"message": "Prediksi berhasil.", "gejala": gejala_message, "Prediction": predicted_label})
     else:
-        predicted_label = "Tidak dapat memprediksi penyakit karena gejala kurang dari 3."
-
-    return jsonify({"message": "Prediksi berhasil.", "gejala": gejala_message, "Prediction": predicted_label})
+        return jsonify({"message": "Gagal memprediksi penyakit karena gejala kurang dari 3."})
 
 
 if __name__ == '__main__':
