@@ -15,13 +15,13 @@
 
 # Response
 # Jika sukses:
- {
+# {
     "Prediction": "Gastrointestinal Disease",
     "gejala": "Gejala yang dipilih: [28, 29, 39, 40, 43, 44]",
     "message": "Prediksi berhasil."
- }
+# }
 
 # Jika Gejala dipilih kurang 3:
- {
+# {
     "message": "Gagal memprediksi penyakit karena gejala kurang dari 3."
- }
+# }
